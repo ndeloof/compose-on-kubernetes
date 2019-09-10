@@ -72,7 +72,7 @@ check test: $(addsuffix .check,$(TEST_PACKAGES)) ## run tests
 
 check-licenses: ## Check the licenses for our dependencies
 	go get -u github.com/frapposelli/wwhrd
-	$(GOPATH)/bin/wwhrd check
+	$$GOPATH/bin/wwhrd check
 
 install-ginkgo:
 	go get -u github.com/onsi/ginkgo/ginkgo
