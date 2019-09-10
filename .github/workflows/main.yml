@@ -9,8 +9,8 @@ jobs:
     
     steps:
     - name: checkout
-      uses: actions/checkout
+    - uses: actions/checkout
     
     - name: check-licenses
-      uses: ./.github/actions/golang
-      run: make check-licenses
+    - uses: ./.github/actions/golang
+    - run: make check-licenses
