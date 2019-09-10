@@ -8,9 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: checkout
-    - uses: actions/checkout
+    - uses: actions/checkout@master
     
-    - name: check-licenses
     - uses: ./.github/actions/golang
     - run: make check-licenses
