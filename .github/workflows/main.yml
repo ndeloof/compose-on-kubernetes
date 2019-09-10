@@ -1,0 +1,13 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: circleci/golang:1.12.9
+    - name: check-licenses
+      run: make check-licenses
